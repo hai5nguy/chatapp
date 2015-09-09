@@ -1,0 +1,15 @@
+{
+  "name": "chatapp",
+  "version": "0.1.1",
+  "description": "Demo Chat App using Node, Express, Angular, Mongo, and SocketIO",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Carson",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "socket.io": "^1.3.6"
+  }
+}

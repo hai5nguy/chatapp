@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html ng-app = 'app'>
+<head>
+    <title>Chat Demo</title>
+
+
+</head>
+<body ng-controller='SocketCtrl'>
+<div ng-repeat='chat in chats'>
+  <p>{{chat.name + ': ' + chat.message}}</p>
+</div>
+</body>
+</html>
