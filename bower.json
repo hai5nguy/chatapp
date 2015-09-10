@@ -1,0 +1,23 @@
+{
+  "name": "ChatApp",
+  "version": "0.1.1",
+  "authors": [
+    "Matt Carson"
+  ],
+  "description": "Demo Chat App",
+  "main": "app.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.5"
+  }
+}
