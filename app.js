@@ -8,17 +8,17 @@ var mongo = require('mongodb').MongoClient;
 
 var url = 'mongodb://localhost:27017/ChatApp';
 mongo.connect(url, function(err, db) {
-  console.log("Connected correctly to MongoDB server.");
+  console.log("Connected to MongoDB server.");
 
 	app.get('/', function (req, res) {
 	res.sendFile(__dirname + '/index.html');
 	});
 	app.use('/', express.static(__dirname + '/') )
-	
+
 	server.listen(5000, function(){
 		console.log('Server is online on port 5000');
 	});
-	
+
 	io.on('connection', function(socket){
 		console.log('new connection made');
 		socket.on('chat1', function(data){

@@ -3,17 +3,12 @@
 <head>
     <title>Chat Demo</title>
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-socket-io/socket.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script src='/socket.io/socket.io.js'></script>
 
     <script>
       var socket = io.connect('http://localhost:5000');
-
-      socket.emit('chat1', {hello: 'world2'});
-
-      socket.on('chat1', function(data){
-        console.log(data);
-      })
     </script>
 
 </head>
