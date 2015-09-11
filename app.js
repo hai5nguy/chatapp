@@ -22,7 +22,7 @@ mongo.connect(url, function(err, db) {
 	io.on('connection', function(socket){
 		console.log('new connection made');
 		socket.on('chat1', function(data){
-			socket.emit('chat1', data);
+			io.emit('chat1', data);
 			console.log(data);
 			db.collection('chats').insert({user: 'matt', message: data.hello}, function(err, inserted){
 				if (err) throw err;

@@ -12,8 +12,9 @@ angular
       mySocket.emit('chat1', {user: 'mcarson000', message: $scope.message});
       $scope.message ="";
     };
+    mySocket.forward('chat1', $scope);
     //This doesn't log incoming message
-    $scope.$on('socket:broadcast', function(event, data) {
+    $scope.$on('socket:chat1', function(event, data) {
       $scope.$apply(function() {
       console.log(data);
       });
